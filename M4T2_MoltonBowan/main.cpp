@@ -38,7 +38,7 @@ d6_3 = (rand() % 6) + 1;
 total = d6_1 + d6_2 + d6_3;
 cout << "rolling 3d6: ";
 cout << d6_1 << " + " << d6_2 << " + " << d6_3 ;
-cout " = " << total << endl;
+cout <<  " = " << total << endl;
 }
 void option_three(){
 //sum and average of dice
@@ -73,7 +73,7 @@ int main()
         option_two(); // the dice roller
     }
     if ( choice == 3 ) {
-        option_three()
+        option_three();
     }
     if (choice == 4){
         cout << "Quitting time !!!" << endl;
