@@ -30,8 +30,15 @@ void option_two(){
  // dice roller
  int d6_1, d6_2,d6_3; // 3 DICE ( 6 SIDED)
  int total; // 3d6
- int
-
+ int  seed = time(0);
+  srand(seed);
+d6_1 = (rand() % 6) + 1;   // 0-5 then add one
+d6_2 = (rand() % 6) + 1;
+d6_3 = (rand() % 6) + 1;
+total = d6_1 + d6_2 + d6_3;
+cout << "rolling 3d6: ";
+cout << d6_1 << " + " << d6_2 << " + " << d6_3 ;
+cout " = " << total << endl;
 }
 void option_three(){
 //sum and average of dice
@@ -62,6 +69,20 @@ int main()
     if(choice == 1){
         option_one(); // function call
     }
+    if (choice == 2){
+        option_two(); // the dice roller
+    }
+    if ( choice == 3 ) {
+        option_three()
+    }
+    if (choice == 4){
+        cout << "Quitting time !!!" << endl;
+
+    }
+
+
+    cout << "Thank you for using the menu. " << endl ;
+
 
     return 0;
 }
