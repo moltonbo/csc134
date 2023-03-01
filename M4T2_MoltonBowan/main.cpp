@@ -1,9 +1,13 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 // CSC 134
 // M4T2 - Menus
 // Oriah Molton Bowman
 // 27 Feb 2023
+// Version 2 -- stated out character creator
+//for Thudd
 
 // menu function
 void option_one () {
@@ -23,20 +27,24 @@ for (int i=0; i<10; i++) {
 cout << endl;
 }
 void option_two(){
- // sum up five numbers
+ // dice roller
+ int d6_1, d6_2,d6_3; // 3 DICE ( 6 SIDED)
+ int total; // 3d6
+ int
+
 }
 void option_three(){
-//ToDO
+//sum and average of dice
 }
-
+// there is no option fout
 
 
 int main()
 {
     cout << "Welcome to the menu" << endl;
     cout << "Press 1 to count "<< endl;
-    cout << "Press 2 to sum up numbers"<< endl;
-    cout << "press 3 TODO" << endl;
+    cout << "Press 2 to roll dice " << endl;
+    cout << "press 3 to roll a character "<< endl; // not implemented yet
     cout<< "Choice:";
 
     // TODO input validation
@@ -45,9 +53,9 @@ int main()
 
     int choice;
     cin >> choice;
-    // user number
-    while ( choice < 1|| choice >3){
-        cout << "please choose 1,2,or 3: ";
+    // user must pick 1,2,3,or 4
+    while ( choice < 1|| choice >4){
+        cout << "please choose 1,2,3,or 4: ";
         cin >> choice;
     }
     // if we get here we know choice is valid
