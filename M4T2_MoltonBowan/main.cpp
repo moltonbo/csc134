@@ -42,6 +42,32 @@ cout <<  " = " << total << endl;
 }
 void option_three(){
 //sum and average of dice
+// roll 3d6, six times
+// find the sum and average
+// TODO: reroll if it's not high enough (averge <9)
+ int total = 0;
+ int d6_1, d6_2,d6_3; // 3 DICE ( 6 SIDED)
+ int roll; // 3d6
+ int  seed = time(0);
+ srand(seed);
+ for (int i=1; i<=6; i++){
+    d6_1 = (rand() % 6) + 1;   // 0-5 then add one
+    d6_2 = (rand() % 6) + 1;
+    d6_3 = (rand() % 6) + 1;
+    roll = d6_1 + d6_2 + d6_3;
+    // print result
+    cout << "Roll # " << i << ":" ;
+    cout << d6_1 << " + " << d6_2 << " + " << d6_3 ;
+    cout <<  " = " << roll << endl;
+
+    total += roll;
+ }
+    // print the total
+    cout << "total of all stats:  " << total << endl;
+    int average = total / 6;  // note we are dropping the decimal
+    cout << "average roll = " << average << endl;
+
+
 }
 // there is no option fout
 
