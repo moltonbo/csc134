@@ -66,6 +66,11 @@ void option_three(){
     cout << "total of all stats:  " << total << endl;
     int average = total / 6;  // note we are dropping the decimal
     cout << "average roll = " << average << endl;
+    if ( average <= 9){
+        cout << " Low stats, you can reroll."<< endl;
+    } else {
+        cout << " You have great character!! Fun have !"<< endl;
+    }
 
 
 }
